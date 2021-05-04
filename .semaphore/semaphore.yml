@@ -44,7 +44,7 @@ blocks:
             - python3 manage.py check --deploy
         - name: Style check
           commands:
-            - apt install flake8
+            - sudo apt install flake8
             - flake8 martor_demo/ --max-line-length=127
     dependencies:
       - Build
